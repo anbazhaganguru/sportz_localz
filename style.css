@@ -1,0 +1,242 @@
+/* Basic brand overrides */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  background-color: #000000 !important;
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+}
+
+.hero {
+  background: url("assets/images/hero.jpg") center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+footer {
+  background: #000000;
+  color: #aaa;
+  padding: 20px 0;
+}
+
+#carouselExampleIndicators {
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 1px 1px 20px;
+  border-radius: 10px;
+}
+
+#carouselExampleIndicators img {
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-box {
+  transition: all 0.3s ease-in-out;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+/* Hover unique gradients */
+.skill-box:nth-child(1):hover {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: #fff !important;
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
+}
+
+.skill-box:nth-child(2):hover {
+  background: linear-gradient(135deg, #6f42c1, #b19cd9);
+  color: #fff !important;
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(111, 66, 193, 0.4);
+}
+
+.skill-box:nth-child(3):hover {
+  background: linear-gradient(135deg, #ffc107, #ff9800);
+  color: #fff !important;
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 193, 7, 0.4);
+}
+
+.skill-box:nth-child(4):hover {
+  background: linear-gradient(135deg, #dc3545, #ff6b6b);
+  color: #fff !important;
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(220, 53, 69, 0.4);
+}
+
+/* Icons + text become white */
+.skill-box:hover i,
+.skill-box:hover h6 {
+  color: #fff !important;
+}
+
+section a.btn {
+  transition: all 0.3s ease-in-out;
+}
+
+section a.btn-danger:hover {
+  background: linear-gradient(135deg, #f50057, #ff4081);
+  transform: scale(1.05);
+}
+
+section a.btn-primary:hover {
+  background: linear-gradient(135deg, #ffc107, #ff9800);
+  transform: scale(1.05);
+}
+
+section a.btn-dark:hover {
+  background: linear-gradient(135deg, #9c27b0, #e91e63);
+  transform: scale(1.05);
+}
+
+section a.btn-primary {
+  transition: all 0.25s ease-in-out;
+  background: #3093fc;
+  color: #fff;
+  border: none;
+}
+
+section a.btn-primary:hover {
+  background: #a955e4;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* hover for profile img */
+.psychx-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  background-color: transparent;
+}
+
+.psychx-logo:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 20px rgba(141, 26, 195, 0.29);
+  background-color: #f0f0f0;
+}
+
+/* Navbar Search Container */
+.navbar-search {
+  position: relative;
+  width: 320px;
+  transition: width 0.4s ease;
+}
+
+.navbar-search input {
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-search input::placeholder {
+  color: #ddd;
+  opacity: 1;
+  transition: color 0.3s;
+}
+
+.navbar-search button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar-search button:hover {
+  color: #ffc107;
+}
+
+.navbar-search input:focus {
+  width: 400px;
+  border-color: #ffc107;
+  box-shadow: 0 0 10px #ffc107;
+}
+
+.navbar-search:hover input {
+  border-color: #00ffff;
+  box-shadow: 0 0 15px #00ffff;
+}
+
+/* minimal hover */
+.minimal-links .nav-link {
+  color: #fff;
+  font-weight: 300;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.minimal-links .nav-link:hover {
+  color: #ffc107;
+  transform: translateY(-2px);
+}
+
+/* adv section */
+.game-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  cursor: pointer;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.game-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* footer fix */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
